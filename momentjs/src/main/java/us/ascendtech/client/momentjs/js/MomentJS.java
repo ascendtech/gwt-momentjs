@@ -8,7 +8,7 @@ import jsinterop.annotations.JsType;
  * @author Payam Meyer
  * Docs: http://momentjs.com/docs/
  */
-@JsType(namespace = JsPackage.GLOBAL, isNative = true, name = "moment")
+@JsType(namespace = JsPackage.GLOBAL, isNative = true, name = "Moment")
 public class MomentJS {
 
 	public MomentJS() {
