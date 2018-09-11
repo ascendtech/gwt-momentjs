@@ -18,15 +18,21 @@ public class MomentJS {
 	}
 
 	@JsMethod
-	public native void moment();
-
-	@JsMethod
-	public native void moment(String input);
-
-	@JsMethod
-	public native void add(int addition, String unit);
-
-	@JsMethod
 	public native String format(String formatting);
+
+	@JsMethod
+	public native double year();
+
+	@JsMethod
+	public native double month();
+
+	@JsMethod
+	public native double day();
+
+	@JsMethod
+	public native void add(int value, String unit);
+
+	@JsMethod
+	public native void subtract(int value, String unit);
 
 }
