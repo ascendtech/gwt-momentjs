@@ -2,7 +2,6 @@ package us.ascendtech.client.momentjs.js;
 
 import jsinterop.annotations.JsMethod;
 import jsinterop.annotations.JsPackage;
-import jsinterop.annotations.JsProperty;
 import jsinterop.annotations.JsType;
 
 /**
@@ -16,11 +15,7 @@ public class MomentJS {
 	}
 
 	public MomentJS(String dateTime) {
-		this.dateTime = dateTime;
 	}
-
-	@JsProperty
-	private String dateTime;
 
 	@JsMethod
 	public native void add(int addition, String unit);
