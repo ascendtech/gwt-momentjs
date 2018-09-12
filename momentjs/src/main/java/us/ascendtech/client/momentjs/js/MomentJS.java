@@ -17,6 +17,9 @@ public class MomentJS {
 	public MomentJS(String dateTime) {
 	}
 
+	public MomentJS(String dateTime, String format) {
+	}
+
 	@JsMethod
 	public native String format(String formatting);
 
