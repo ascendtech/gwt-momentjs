@@ -20,6 +20,12 @@ public class MomentJS {
 	public MomentJS(String dateTime, String format) {
 	}
 
+	public MomentJS(String dateTime, String format, String locale) {
+	}
+
+	public MomentJS(String dateTime, String format, String locale, boolean strict) {
+	}
+
 	@JsMethod
 	public native String format(String formatting);
 
