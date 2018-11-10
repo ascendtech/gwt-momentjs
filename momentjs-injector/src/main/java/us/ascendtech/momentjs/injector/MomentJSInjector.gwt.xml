@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='momentjs'>
+    <inherits name="elemental2.core.Core"/>
+    <source path='client'/>
+</module>
+

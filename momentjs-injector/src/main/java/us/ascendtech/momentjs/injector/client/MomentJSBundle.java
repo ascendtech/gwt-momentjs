@@ -1,4 +1,4 @@
-package us.ascendtech.client.momentjs.js;
+package us.ascendtech.momentjs.injector.client;
 
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.resources.client.ClientBundle;

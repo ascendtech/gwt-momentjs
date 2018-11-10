@@ -20,8 +20,14 @@ subprojects {
     apply(plugin = "java")
     apply(plugin = "maven")
 
+
     defaultTasks("build")
     group = "us.ascendtech"
+
+    repositories {
+        mavenCentral()
+    }
+
 
     tasks.withType<JavaCompile> {
         options.isDebug = true

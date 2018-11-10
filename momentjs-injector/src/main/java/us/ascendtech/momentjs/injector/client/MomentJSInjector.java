@@ -1,7 +1,6 @@
-package us.ascendtech.client.momentjs;
+package us.ascendtech.momentjs.injector.client;
 
 import com.google.gwt.core.client.ScriptInjector;
-import us.ascendtech.client.momentjs.js.MomentJSBundle;
 
 public class MomentJSInjector {
 

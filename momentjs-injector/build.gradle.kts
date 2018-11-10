@@ -3,7 +3,11 @@ plugins {
 }
 
 gwt {
-    isIncludeGwtUser = false
+    isIncludeGwtUser = true
     libs.add("elemento-core")
+}
+
+dependencies {
+    compile(project(":momentjs"))
 }
 
