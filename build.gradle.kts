@@ -2,6 +2,7 @@ import org.ajoberstar.reckon.gradle.ReckonExtension
 
 plugins {
     java
+    maven
     id("us.ascendtech.gwt.lib") version "0.3.3" apply false
     id("org.ajoberstar.reckon") version "0.8.0"
 }
@@ -17,6 +18,7 @@ defaultTasks("build")
 subprojects {
 
     apply(plugin = "java")
+    apply(plugin = "maven")
 
     defaultTasks("build")
     group = "us.ascendtech"
