@@ -2,6 +2,7 @@ import org.ajoberstar.reckon.gradle.ReckonExtension
 
 plugins {
     java
+    idea
     maven
     id("us.ascendtech.gwt.lib") version "0.3.3" apply false
     id("org.ajoberstar.reckon") version "0.8.0"
@@ -19,6 +20,7 @@ subprojects {
 
     apply(plugin = "java")
     apply(plugin = "maven")
+    apply(plugin = "idea")
 
 
     defaultTasks("build")
@@ -50,11 +52,19 @@ subprojects {
                 srcDir("src/main/java")
             }
         }
-        test {
-            resources {
-                srcDir("src/test/java")
-            }
-        }
     }
+
+    //workaround for intellij 2018.3 (should be fixed in 2018.3.2)
+    idea.module {
+        resourceDirs = resourceDirs - file("src/main/java")
+    }
+
+    val sourcesJar = tasks.register<Jar>("sourcesJar") {
+        classifier = "sources"
+        from(sourceSets.getByName("main").allSource)
+    }
+
+
+    artifacts.add("archives", sourcesJar)
 
 }
