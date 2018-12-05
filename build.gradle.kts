@@ -67,4 +67,8 @@ subprojects {
 
     artifacts.add("archives", sourcesJar)
 
+    tasks.withType<Jar> {
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+
 }
