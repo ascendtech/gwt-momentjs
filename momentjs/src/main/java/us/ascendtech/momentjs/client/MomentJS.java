@@ -1,4 +1,4 @@
-package us.ascendtech.momentjs;
+package us.ascendtech.momentjs.client;
 
 import jsinterop.annotations.JsMethod;
 import jsinterop.annotations.JsPackage;
