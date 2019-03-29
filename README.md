@@ -7,20 +7,20 @@ Light JSInterop wrapper for [moment.js](http://momentjs.com)
 
 ### Gradle
 
-Add JitPack
+Add AST Maven Repo
 ```gradle
   allprojects {
     repositories {
       ...
-      maven { url 'https://jitpack.io' }
+      maven { url 'https://maven.ascend-tech.us/repo' }
     }
   }
 ```
 
 Add Dependency:
 ```gradle
-  compile 'com.github.ascendtech:gwt-momentjs:1.0'
-  compile 'com.github.ascendtech:gwt-momentjs:1.0:sources'
+  compile 'com.github.ascendtech:gwt-momentjs:0.1.9'
+  compile 'com.github.ascendtech:gwt-momentjs:0.1.9:sources'
 ```
 
 ### Maven
@@ -29,8 +29,8 @@ Add JitPack
 ```xml
   <repositories>
     <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
+      <id>AST Maven</id>
+      <url>https://maven.ascend-tech.us/repo</url>
     </repository>
   </repositories>
 ```
@@ -39,12 +39,12 @@ Add Dependency
   <dependency>
     <groupId>com.github.ascendtech</groupId>
     <artifactId>gwt-momentjs</artifactId>
-    <version>1.0</version>
+    <version>0.1.9</version>
   </dependency>
   <dependency>
     <groupId>com.github.ascendtech</groupId>
     <artifactId>gwt-momentjs</artifactId>
-    <version>1.0</version>
+    <version>0.1.9</version>
     <classifier>sources</classifier>
   </dependency>
 ```
