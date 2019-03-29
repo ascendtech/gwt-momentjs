@@ -19,8 +19,8 @@ Add AST Maven Repo
 
 Add Dependency:
 ```gradle
-  compile 'com.github.ascendtech:gwt-momentjs:0.1.9'
-  compile 'com.github.ascendtech:gwt-momentjs:0.1.9:sources'
+  compile 'us.ascendtech:momentjs:0.1.9'
+  compile 'us.ascendtech:momentjs:0.1.9:sources'
 ```
 
 ### Maven
@@ -37,13 +37,13 @@ Add JitPack
 Add Dependency
 ```xml
   <dependency>
-    <groupId>com.github.ascendtech</groupId>
-    <artifactId>gwt-momentjs</artifactId>
+    <groupId>us.ascendtech</groupId>
+    <artifactId>momentjs</artifactId>
     <version>0.1.9</version>
   </dependency>
   <dependency>
-    <groupId>com.github.ascendtech</groupId>
-    <artifactId>gwt-momentjs</artifactId>
+    <groupId>us.ascendtech</groupId>
+    <artifactId>momentjs</artifactId>
     <version>0.1.9</version>
     <classifier>sources</classifier>
   </dependency>
